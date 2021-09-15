@@ -1,5 +1,5 @@
 // by Adam Pietrasiak 16.02.2016 from https://coderoad.ru/8897289
-export default function isHidden(window, element, partial = true){
+module.exports = function isHidden(window, element, partial = true){
     //we're using getBoundingClientRect to get position of element relative to viewport
     //so we dont need to care about scroll position
     var box = element.getBoundingClientRect();
